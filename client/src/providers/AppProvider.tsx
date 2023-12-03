@@ -1,10 +1,5 @@
 import React, { createContext, useMemo, useContext, useReducer } from "react";
-import {
-  AppState,
-  initialState,
-  rootReducer,
-  RootStateContext,
-} from "@/stores";
+import { initialState, rootReducer, RootStateContext } from "@/stores";
 import { useConfirm } from "@/hooks/useConfirm";
 
 export const AppContext = createContext<RootStateContext>(
