@@ -6,7 +6,7 @@ const HomePage = () => {
 
   return (
     <div>
-      Home page
+      Home pages
       <Hero />
     </div>
   );
