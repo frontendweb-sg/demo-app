@@ -1,0 +1,23 @@
+.btn {
+  @apply text-center flex items-center  capitalize text-sm py-1 px-4 rounded shadow-md;
+
+  &-primary {
+    @apply bg-rose-500  text-white;
+    &:hover {
+      @apply bg-rose-600;
+    }
+  }
+
+  &-secondary {
+    @apply bg-gray-300 shadow  text-black;
+    &:hover {
+      @apply bg-gray-500 text-white;
+    }
+  }
+  &-success {
+    @apply bg-green-500 shadow  text-white;
+    &:hover {
+      @apply bg-green-600 text-white;
+    }
+  }
+}

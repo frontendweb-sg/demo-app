@@ -1,0 +1,17 @@
+.modal {
+  &-xs {
+    @apply w-80;
+  }
+  &-sm {
+    @apply w-2/6;
+  }
+  &-md {
+    @apply w-2/5;
+  }
+  &-lg {
+    @apply w-2/4;
+  }
+  &-xl {
+    @apply w-2/3;
+  }
+}
