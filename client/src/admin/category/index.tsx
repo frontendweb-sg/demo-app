@@ -19,7 +19,7 @@ const AdminCategory = () => {
   const { category, dispatch } = useAppStore();
 
   useEffect(() => {
-    // fetchCategories(dispatch);
+    fetchCategories(dispatch);
   }, [dispatch]);
 
   return (

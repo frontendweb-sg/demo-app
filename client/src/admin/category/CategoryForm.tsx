@@ -35,7 +35,9 @@ const CategoryForm = memo(function CategoryForm({
           description: category?.description,
         }
       : categoryService.getIntialValues(),
-    async onSubmit(values, formikHelpers) {},
+    async onSubmit(values) {
+      console.log("values", values);
+    },
   });
 
   const enabled = isSubmitting || !(dirty && isValid);

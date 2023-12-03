@@ -6,7 +6,7 @@ const HomePage = () => {
 
   return (
     <div>
-      Home pages
+      Home pages {JSON.stringify(store)}
       <Hero />
     </div>
   );

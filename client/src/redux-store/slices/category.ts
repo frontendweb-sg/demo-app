@@ -14,7 +14,7 @@ export const categorySlice = createSlice({
   initialState,
   name: "category",
   reducers: {},
-  extraReducers(builder) {},
+  extraReducers() {},
 });
 
 export default categorySlice.reducer;

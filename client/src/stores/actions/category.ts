@@ -10,16 +10,13 @@ export enum CategoryAction {
   CATEGORY_INACTIVE = "category inactive record",
 }
 
-export const fetchCategories = async (dispatch: Function, query?: any) => {
+export const fetchCategories = async (dispatch: Function) => {
   if (typeof dispatch !== "function")
     throw new Error("First parameter should be dispatcher");
-
-  //dispatch({ type: CategoryAction.CATEGORY_LOADING, payload: true });
   try {
     const response = await categoryService.getAll();
     console.log("res", response);
     dispatch({ type: CategoryAction.CATEGORY_FETCH, payload: response.data });
-    // dispatch({ type: CategoryAction.CATEGORY_LOADING, payload: false });
     toast.success("Catgory feched successfully!");
   } catch (error) {
     dispatch({ type: CategoryAction.CATEGORY_LOADING, payload: false });
