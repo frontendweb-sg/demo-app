@@ -16,7 +16,7 @@ const Navigation = () => {
         <LinkItem className="text-sm py-5 px-1 block" menu to="/">
           Blogs
         </LinkItem>
-        <LinkItem className="text-sm py-5 px-1 block" menu to="/">
+        <LinkItem className="text-sm py-5 px-1 block" menu to="/contact">
           Contact
         </LinkItem>
       </ul>

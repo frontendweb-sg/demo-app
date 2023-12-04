@@ -17,13 +17,17 @@ import UserProfile from "@/users/profile";
 import ErrorPage from "@/pages/Error";
 import RootLayout from "@/layout/public";
 import HomePage from "@/pages/HomePage";
+import ContactPage from "@/pages/ContactPage";
 
 const appRoutes = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
-    children: [{ index: true, element: <HomePage /> }],
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "contact", element: <ContactPage /> },
+    ],
   },
   {
     path: "/auth",
